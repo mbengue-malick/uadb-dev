@@ -3,9 +3,12 @@ pipeline {
 	
 	stages {
 		stage('Test github'){
-			script {
+		steps{
+	script {
 			sh 'echo Bonjour uadb'	
 		}
+	}
+		
 	}
 }
 }
