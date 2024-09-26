@@ -12,8 +12,9 @@ pipeline {
 
 	stage('docker') {
 		steps {
-		script { bat 'docker build -t app:dev'
-		bat 'docker tag app:dev malicksn/app:dev'
+		script { 
+			bat 'docker build -t app:dev .'
+			bat 'docker tag app:dev malicksn/app:dev'
 			}
 		}
 	}
