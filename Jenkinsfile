@@ -5,7 +5,7 @@ pipeline {
 		stage('Test github'){
 		steps{
 	script {
-			sh 'echo Bonjour uadb'	
+			bat 'echo Bonjour uadb'	
 		}
 	}
 		
